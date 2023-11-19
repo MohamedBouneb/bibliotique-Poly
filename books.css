@@ -1,0 +1,77 @@
+/*config de tout la page */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-weight: 800;
+    
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #141a42;
+    
+    
+}
+li {
+    float: right; 
+    
+}
+li a  {
+    display: block;
+    text-decoration: none;
+    color: #0095ff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.17rem;
+    letter-spacing: 2px;
+    padding:2rem 2rem;
+    transition: 0.5s;
+    
+
+}
+li a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    background-color: #0095ff;
+
+}
+/* end nav */
+
+main{
+    height: 797px;
+    background-image: url(/images/bg3.jpg);
+    background-size: cover;
+}
+
+.content {
+    margin-top: -30px;
+    display: flex;
+    padding: 3rem 5rem;
+    
+}
+.box{
+    margin-top: 0rem;
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.box {
+    margin-top: 0rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    transition: 1s;
+}
+.box img:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+
+h1{
+    color:#0095ff;
+    font-size: 1rem;
+}
+h2{
+    color: #1b3c53;
+}

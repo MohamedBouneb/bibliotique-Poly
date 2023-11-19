@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&display=swap');
+/*Importation mta Fonts */
+/*
+for titre font-family: 'Bebas Neue', sans-serif;
+for text font-family: 'Montserrat', sans-serif;
+
+*/
+/*conf de tout la page*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-weight: 800;
+}
+/*navbar*/
+ul{
+    list-style-type: none;
+    background-color:#141a42;
+    opacity: 0.80;
+}
+li a  {
+    display: block;
+    text-decoration: none;
+    color: #0095ff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.17rem;
+    letter-spacing: 2px;
+    padding:2rem 2rem;
+    transition: 0.5s;
+
+}
+li a:hover {
+    color: rgb(176, 175, 162);
+    transition: 0.5s;
+}
+/* end navbar*/
+
+main{
+    height: 715px;
+    background-image: url(/images/bg2.jpg);
+    background-size: cover;
+    display: flex;
+}
+.content{
+    background-color:#141a42;
+    opacity: 0.65;
+    margin-left: 20rem;
+    padding: 11.6rem 15rem;
+    
+} 
+/*placement de text*/
+.content .info{
+    padding: 4rem .5rem;
+}
+h1{
+    font-size: 3rem;
+    color: #0095ff;
+
+}
+p{
+    font-size: 2rem; 
+    color: aliceblue;
+}

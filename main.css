@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&display=swap');
+/*Importation mta Fonts */
+/*
+for titre font-family: 'Bebas Neue', sans-serif;
+for text font-family: 'Montserrat', sans-serif;
+
+*/
+
+/*config de tout la page */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-weight: 800;
+}
+/*le bg  */
+main{
+    height: 715px;
+    background-image: url(/images/bg1.jpg);
+    background-size: cover;
+    display: flex;
+}
+/* le contenu de right*/
+.contentRight {
+    background-color:#141a42;
+    opacity: 0.65;
+    margin-left: 20rem;
+    padding: 20px;
+    animation: move 1s linear ; /* insertion de l"animation */
+}
+/* petit animation de glissement de le partie right*/
+@keyframes move {
+    0%{
+        background-color:#141a42;
+        opacity: 0.65;
+        margin-left: 30rem;
+        padding: 20px;
+    }
+    100%{
+        background-color:#141a42;
+        opacity: 0.65;
+        margin-left: 20rem;
+        padding: 20px;
+    }
+}
+/*nav */
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+li {
+    float: right;
+    
+}
+li a  {
+    display: block;
+    text-decoration: none;
+    color: #0095ff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.17rem;
+    letter-spacing: 2px;
+    padding:2rem 2rem;
+    transition: 0.5s;
+
+}
+li a:hover {
+    color: rgb(176, 175, 162);
+    transition: 0.5s;
+
+}
+/* end nav */
+/*config logo */
+.logo{
+    padding: 4.5rem 10rem ;
+    
+}
+/*titre */
+h1{
+    font-weight: 800;
+    color: #0095ff;
+}
+/*text */
+h2{
+    color: rgb(255, 255, 255);
+}
+/*affiche le deux btn en mode flex */
+.contentLeft{
+    display: flex;
+}
+/*confg de btn*/
+.contentLeft input{
+    border: none;
+    background-color: #1b3c53;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2.5px;
+    padding: 1rem  1rem;
+    color: #0095ff;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;                                                                                                                                   
+}
+/* btn hover*/
+.contentLeft input:hover{
+    padding: 1rem  4rem;
+    background-color: #0095ff;
+    color: aliceblue;
+}
+
+
+
+

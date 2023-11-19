@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Connection</title>
+    <link rel="stylesheet" href="createAccount.css">
+</head>
+<body>
+<main>
+    <i class="espace"></i>
+    
+    <div class="left">
+        <h1>Hello To Poly BIBLIOTHEQUE</h1>
+        <p>Create your account NOW !</p>
+        <form id="form" action="" method="">
+        
+
+    <div class="inputs ">
+        <div class="rowOne">
+            <div class="Username">
+                <input type="text" name="" id="Username" placeholder="Username">
+            </div>
+            <div class="mail">
+                    <input type="text" name="" id="mail" placeholder="mail">
+            </div>
+        </div>
+        <br>
+        <div class="rowTow">
+            <div>
+                <input type="text" name="" id="pw" placeholder="PassWord">
+            </div>
+            <div>
+                <input type="text" name="" id="cpw" placeholder="Conformation password">
+            </div>
+        </div>
+        <div class="rowThree">
+            <div id="check">
+                <input type="checkbox" id="privacy" name="privacy" value="privacy" />
+                <label for="privacy"><a href="#">By signing up, you agree to our privacy policy, user terms</a></label>
+            </div>
+            <div class="bt1">
+                <input type="submit" value="Sign in ">
+            </div>
+        </div>
+    </div>  
+      
+    </form>
+            <p>If you dont have an account ? <a class="sign" href="connectionlib.html">Sign in !</a></p>
+
+    <h2 class="msg">
+        -
+    </h2>
+    <a href="/main.html"><i class="material-icons">home</i></a>
+    </div> 
+    
+    
+    
+</main>
+
+<script>
+    document.getElementById('form').addEventListener('submit', function(event) {
+        var username = document.getElementById('Username').value;
+        var mail = document.getElementById('mail').value;
+        var pw = document.getElementById('pw').value;
+        var cpw = document.getElementById('cpw').value;
+
+        var check = document.getElementById('check').value;
+        //get data mel form
+
+        
+        if (username === '' || mail === '' || pw === '' || cpw === '') { //if wahda fehom vide error
+        event.preventDefault(); // besh ib9a el msg ba3ed el click
+        document.querySelector('.msg').innerHTML = ' fill all the fields '; //msg a aficher
+        } else {
+            document.querySelector('.msg').innerHTML = ''; // Clear previous error messages
+        }
+
+        
+        if (!check.checked) {
+            event.preventDefault(); 
+            document.querySelector('.msg').innerHTML = 'check the privacy policy ';
+        } 
+    }
+
+        
+    );
+</script>
+
+</body>
+</html>

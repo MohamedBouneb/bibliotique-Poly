@@ -1,0 +1,81 @@
+/*config de tout la page */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-weight: 800;
+    
+    
+}
+.espace{
+    color: #0095ff;
+    font-size: 3.5rem;
+    margin-left: 5rem;
+}
+
+main{
+    height: 715px;
+    background-image: url(/images/bg4.jpg);
+    background-size: cover;
+    display: flex;
+}
+.left .material-icons{
+    margin-top: 3rem;
+    color: #0095ff;
+    font-size: 3.5rem;
+}
+.left {
+    background-color:#1b3c53;
+    padding: 9rem 4.5rem;
+}
+input{
+    margin-top: 1rem;
+    border: none;
+    background-color:#0095ff  ;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2.5px;
+    padding: 1rem  6rem;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;                                                                                                                                   
+}
+
+input::placeholder{
+   color: #ffffff;
+                                                                                                                                      
+}
+.rowOne{
+    display: flex;
+    gap: 2.5rem;
+}
+.rowTow{
+    display: flex;
+    gap: 2.5rem;
+}
+p,a{
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+
+}
+h1{
+    color: #0095ff;
+    font-family: 'Bebas Neue', sans-serif;  
+}
+label{
+    font-size: 0.9rem;
+}
+.sign{
+    color: #0095ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    
+}
+.msg{
+    color: #ffffff;
+    width: 50%;
+    
+}
